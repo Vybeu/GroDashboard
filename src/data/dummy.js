@@ -1,6 +1,7 @@
 import React from 'react';
 import { AiOutlineCalendar, AiOutlineShoppingCart, AiOutlineAreaChart, AiOutlineBarChart, AiOutlineStock } from 'react-icons/ai';
 import { FiShoppingBag, FiEdit, FiPieChart, FiBarChart, FiCreditCard, FiStar, FiShoppingCart } from 'react-icons/fi';
+import {GiTreeGrowth, GiBookshelf} from 'react-icons/gi';
 import { BsKanban, BsBarChart, BsBoxSeam, BsCurrencyDollar, BsShield, BsChatLeft } from 'react-icons/bs';
 import { BiColorFill } from 'react-icons/bi';
 import { IoMdContacts } from 'react-icons/io';
@@ -439,8 +440,8 @@ export const links = [
     title: 'Dashboard',
     links: [
       {
-        name: 'ecommerce',
-        icon: <FiShoppingBag />,
+        name: 'growth',
+        icon: <GiTreeGrowth />,
       },
     ],
   },
@@ -449,8 +450,8 @@ export const links = [
     title: 'Pages',
     links: [
       {
-        name: 'orders',
-        icon: <AiOutlineShoppingCart />,
+        name: 'classes',
+        icon: <GiBookshelf />,
       },
       {
         name: 'employees',
