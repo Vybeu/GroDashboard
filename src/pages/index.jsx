@@ -1,9 +1,9 @@
 export { default as Growth } from './Growth';
 export { default as Kanban } from './Kanban';
 export { default as Classes } from './Classes';
-export { default as Employees } from './Employees';
+export { default as Teachers } from './Teachers';
 export { default as Editor } from './Editor';
-export { default as Customers } from './Customers';
+export { default as Counselors } from './Counselors';
 export { default as ColorPicker } from './ColorPicker';
 export { default as Calendar } from './Calendar';
 export { default as Area } from './Charts/Area';
