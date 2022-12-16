@@ -181,7 +181,7 @@ export const areaCustomSeries = [
     dataSource: areaChartData[0],
     xName: 'x',
     yName: 'y',
-    name: 'USA',
+    name: 'Positive Days',
     opacity: '0.8',
     type: 'SplineArea',
     width: '2',
@@ -191,7 +191,7 @@ export const areaCustomSeries = [
     dataSource: areaChartData[1],
     xName: 'x',
     yName: 'y',
-    name: 'France',
+    name: 'Negative Days',
     opacity: '0.8',
     type: 'SplineArea',
     width: '2',
@@ -200,7 +200,7 @@ export const areaCustomSeries = [
     dataSource: areaChartData[2],
     xName: 'x',
     yName: 'y',
-    name: 'Germany',
+    name: 'Productivity',
     opacity: '0.8',
     type: 'SplineArea',
     width: '2',
@@ -454,37 +454,12 @@ export const links = [
     title: 'Charts',
     links: [
       {
-        name: 'line',
-        icon: <AiOutlineStock />,
-      },
-      {
         name: 'area',
         icon: <AiOutlineAreaChart />,
-      },
-
-      {
-        name: 'bar',
-        icon: <AiOutlineBarChart />,
-      },
-      {
-        name: 'pie',
-        icon: <FiPieChart />,
-      },
-      {
-        name: 'financial',
-        icon: <RiStockLine />,
-      },
-      {
-        name: 'color-mapping',
-        icon: <BsBarChart />,
       },
       {
         name: 'pyramid',
         icon: <GiLouvrePyramid />,
-      },
-      {
-        name: 'stacked',
-        icon: <AiOutlineBarChart />,
       },
     ],
   },
