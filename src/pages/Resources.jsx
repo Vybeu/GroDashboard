@@ -39,7 +39,7 @@ const Resources = () => {
                     {resourceData.map((item) => (
                         <div key={item.title}
                             className='bg-white dark:text-gray-200 dark:bg-secondary-dark-bg md:w-56 p-4 pt-9 rounded-2xl'>
-                            <button type='button' style={{ color: item.iconColor, backgroundColor: item.iconBg }} className='text-2xl opacity-0.9 rounded-full p-4 hover:drop-shadow-xl'>
+                            <button type='button' style={{ color: item.iconColor, backgroundColor: item.iconBg }} className='text-2xl opacity-0.9 rounded-full p-4 hover:drop-shadow-xl' onClick={{}}>
                                 {item.icon}
                             </button>
                             <p className='mt-3'>
@@ -58,7 +58,7 @@ const Resources = () => {
                 </div>
             </div>
 
-            <div className='flex gap-10 flex-wrap justify-center'>
+            {/* <div className='flex gap-10 flex-wrap justify-center'>
                 <div className='bg-white dark:text-gray-200 dark:bg-secondary-dark-bg m-3 p-4 rounded-2xl md:w-77'>
 
                     <div className='mt-10 flex gap-10 flex-wrap justify-center'>
@@ -80,9 +80,39 @@ const Resources = () => {
                         </div>
 
                         <div>
-                            {/* <Stacked width='320px' height='360px' /> */}
                             <div>
                                 <RiLeafLine size='10x' color='#44b644' />
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+            </div> */}
+            <div className='flex gap-10 flex-wrap justify-center'>
+                <div className='bg-white dark:text-gray-200 dark:bg-secondary-dark-bg m-3 p-4 rounded-2xl md:w-77'>
+
+                    <div className='mt-10 flex gap-10 flex-wrap justify-center'>
+                        <div className=' border-color m-4 pr-10'>
+                            <div>
+                                <p className='mt-1 text-3xl font-semibold'>Depression</p>
+                                <p className='text-gray-500 font-semibold'>Overview</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div className='mt-10 flex gap-10 flex-wrap justify-center'>
+                        <div className='border-r-1 border-color m-4 pr-10'>
+                            <div className='mt-8'>
+                                <p>
+                                Major depressive disorder (MDD),<br /> also known simply as depression, is a mental disorder <br /> characterized by at least two weeks of pervasive low mood. <br /> Low self-esteem, loss of interest in normally <br /> enjoyable activities, low energy, and pain <br /> without a clear cause are common symptoms. <br /> Those affected may also occasionally have <br /> delusions or hallucinations. <br />
+                                <a className='text-blue-600' href='https://www.counseling.org/knowledge-center/mental-health-resources/depression'>Additional Resources</a>
+                                </p>
+                            </div>
+                        </div>
+
+                        <div>
+                            {/* <Stacked width='320px' height='360px' /> */}
+                            <div>
+                                
                             </div>
                         </div>
 
