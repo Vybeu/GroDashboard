@@ -1,13 +1,15 @@
 import React from 'react';
 import { AiOutlineCalendar, AiOutlineShoppingCart, AiOutlineAreaChart, AiOutlineBarChart, AiOutlineStock } from 'react-icons/ai';
 import { FiEdit, FiPieChart, FiBarChart, FiCreditCard, FiStar, FiShoppingCart } from 'react-icons/fi';
-import {IoIosSchool, } from 'react-icons/io';
-import {GiTreeGrowth, GiBookshelf} from 'react-icons/gi';
+import {CiCircleAlert} from 'react-icons/ci';
+import {IoIosSchool } from 'react-icons/io';
+import {GiTreeGrowth, GiBookshelf, GiBrain, GiChickenOven} from 'react-icons/gi';
 import { BsKanban, BsBarChart, BsPencil, BsCurrencyDollar, BsShield, BsChatLeft, BsFillCalendarCheckFill, BsEmojiSunglasses } from 'react-icons/bs';
-import { BiColorFill } from 'react-icons/bi';
+import { BiColorFill, BiBlanket } from 'react-icons/bi';
 import { IoMdContacts } from 'react-icons/io';
-import { RiContactsLine, RiStockLine } from 'react-icons/ri';
+import { RiContactsLine, RiStockLine, RiPagesLine } from 'react-icons/ri';
 import { MdOutlineSupervisorAccount } from 'react-icons/md';
+import {RiLeafLine} from 'react-icons/ri';
 import {  } from 'react-icons/hi';
 import { TiTick } from 'react-icons/ti';
 import { GiLouvrePyramid } from 'react-icons/gi';
@@ -427,6 +429,10 @@ export const links = [
         name: 'counselors',
         icon: <RiContactsLine />,
       },
+      {
+        name: 'resources',
+        icon: <RiPagesLine />,
+      }
     ],
   },
   {
@@ -519,6 +525,58 @@ export const chatData = [
     time: '1:12 AM',
   },
 ];
+
+export const resourceData = [
+  {
+    icon: <GiBrain />,
+    amount: 'Depression',
+    percentage: '',
+    title: 'Resources',
+    iconColor: '#f8bbd0ff',
+    iconBg: '#f06292ff',
+    pcColor: 'red-600',
+  },
+  {
+    icon: <GiChickenOven />,
+    amount: 'Eating Disorder',
+    percentage: '',
+    title: 'Resources',
+    iconColor: 'rgb(255, 244, 229)',
+    iconBg: '#ff9500',
+    pcColor: 'green-600',
+  },
+  {
+    icon: <BiBlanket />,
+    amount: 'Anxiety',
+    percentage: '',
+    title: 'Resources',
+    iconColor: 'rgb(228, 106, 118)',
+    iconBg: 'rgb(255, 244, 229)',
+
+    pcColor: 'green-600',
+  },
+  {
+    icon: <CiCircleAlert />,
+    amount: 'Crisis',
+    percentage: 'Dial 988',
+    title: 'Resources',
+    iconColor: '#ff0015', 
+    iconBg: '#ef9a9aff',
+    pcColor: 'red-600',
+  }, 
+];
+
+export const secondaryResources = [
+  {
+    icon: <CiCircleAlert />,
+    amount: 'Crisis',
+    percentage: 'Dial 988',
+    title: 'Resources',
+    iconColor: '#ff0015', 
+    iconBg: '#ef9a9aff',
+    pcColor: 'red-600',
+  },
+]
 
 export const earningData = [
   {
