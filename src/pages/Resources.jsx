@@ -1,12 +1,13 @@
 import React from 'react';
 import { BiBlanket } from 'react-icons/bi';
 import { GoPrimitiveDot } from 'react-icons/go';
-import {GiBrain} from 'react-icons/gi';
+import { GiBrain } from 'react-icons/gi';
 import { IoIosMore } from 'react-icons/io';
-import {RiLeafLine} from 'react-icons/ri';
+import { RiLeafLine } from 'react-icons/ri';
 import { DropDownListComponent } from '@syncfusion/ej2-react-dropdowns';
 
 import { Stacked, Pie, Button, LineChart, SparkLine } from '../components';
+import { Card } from '../components';
 import { resourceData, medicalproBranding, recentTransactions, weeklyStats, dropdownData, SparklineAreaData, ecomPieChartData } from '../data/dummy';
 import { useStateContext } from '../contexts/ContextProvider';
 
@@ -58,6 +59,8 @@ const Resources = () => {
                 </div>
             </div>
 
+            <Card />
+
             {/* <div className='flex gap-10 flex-wrap justify-center'>
                 <div className='bg-white dark:text-gray-200 dark:bg-secondary-dark-bg m-3 p-4 rounded-2xl md:w-77'>
 
@@ -103,8 +106,8 @@ const Resources = () => {
                         <div className='border-r-1 border-color m-4 pr-10'>
                             <div className='mt-8'>
                                 <p>
-                                <span className='font-semibold'>Major depressive disorder (MDD)</span><br /> also known simply as depression, is a mental disorder <br /> characterized by at least two weeks of pervasive low mood. <br /> Low self-esteem, loss of interest in normally <br /> enjoyable activities, low energy, and pain <br /> without a clear cause are common symptoms. <br /> Those affected may also occasionally have <br /> delusions or hallucinations. <br />
-                                <a className='text-blue-600' href='https://www.counseling.org/knowledge-center/mental-health-resources/depression'>Additional Resources</a>
+                                    <span className='font-semibold'>Major depressive disorder (MDD)</span><br /> also known simply as depression, is a mental disorder <br /> characterized by at least two weeks of pervasive low mood. <br /> Low self-esteem, loss of interest in normally <br /> enjoyable activities, low energy, and pain <br /> without a clear cause are common symptoms. <br /> Those affected may also occasionally have <br /> delusions or hallucinations. <br />
+                                    <a className='text-blue-600' href='https://www.counseling.org/knowledge-center/mental-health-resources/depression'>Additional Resources</a>
                                 </p>
                             </div>
                         </div>
@@ -123,11 +126,11 @@ const Resources = () => {
                                 borderRadius='10px'
                                 size='sm'
                             /> */}
-                            <div>
-                                <a href='https://www.counseling.org/knowledge-center/mental-health-resources/depression'>
-                                <GiBrain size='10x' color='#f06292ff' />
-                                </a>
-                            </div>
+                                <div>
+                                    <a href='https://www.counseling.org/knowledge-center/mental-health-resources/depression'>
+                                        <GiBrain size='10x' color='#f06292ff' />
+                                    </a>
+                                </div>
                             </div>
                         </div>
 

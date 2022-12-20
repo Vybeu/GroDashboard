@@ -4,6 +4,7 @@ import { FiSettings } from 'react-icons/fi';
 import { TooltipComponent } from '@syncfusion/ej2-react-popups';
 
 import { Navbar, Footer, Sidebar, ThemeSettings } from './components';
+import { Cards } from './components/Card';
 import { Growth, Classes, Calendar, Teachers, Resources, Pyramid, Counselors, Kanban, Line, Area, Bar, Pie, Financial, ColorPicker, ColorMapping, Editor } from './pages'
 
 import { useStateContext } from './contexts/ContextProvider';
