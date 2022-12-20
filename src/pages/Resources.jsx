@@ -103,7 +103,7 @@ const Resources = () => {
                         <div className='border-r-1 border-color m-4 pr-10'>
                             <div className='mt-8'>
                                 <p>
-                                Major depressive disorder (MDD),<br /> also known simply as depression, is a mental disorder <br /> characterized by at least two weeks of pervasive low mood. <br /> Low self-esteem, loss of interest in normally <br /> enjoyable activities, low energy, and pain <br /> without a clear cause are common symptoms. <br /> Those affected may also occasionally have <br /> delusions or hallucinations. <br />
+                                <span className='font-semibold'>Major depressive disorder (MDD)</span><br /> also known simply as depression, is a mental disorder <br /> characterized by at least two weeks of pervasive low mood. <br /> Low self-esteem, loss of interest in normally <br /> enjoyable activities, low energy, and pain <br /> without a clear cause are common symptoms. <br /> Those affected may also occasionally have <br /> delusions or hallucinations. <br />
                                 <a className='text-blue-600' href='https://www.counseling.org/knowledge-center/mental-health-resources/depression'>Additional Resources</a>
                                 </p>
                             </div>
@@ -112,7 +112,22 @@ const Resources = () => {
                         <div>
                             {/* <Stacked width='320px' height='360px' /> */}
                             <div>
-                                
+                                {/* <p>
+                                <span className='font-semibold'>Symptoms in adults:</span> <br />
+                                A person having a major depressive episode <br /> usually exhibits a low mood, which pervades all aspects of life, <br /> and an inability to experience pleasure in previously enjoyable activities.<br /> Depressed people may be preoccupied with—or ruminate over—thoughts <br /> and feelings of worthlessness, inappropriate guilt or regret, helplessness <br /> or hopelessness. In severe cases, depressed people may have symptoms <br /> of psychosis. These symptoms include delusions or, less commonly, hallucinations, <br /> usually unpleasant.
+                                </p>
+                                <Button
+                                color='white'
+                                bgColor={currentColor}
+                                text='Next'
+                                borderRadius='10px'
+                                size='sm'
+                            /> */}
+                            <div>
+                                <a href='https://www.counseling.org/knowledge-center/mental-health-resources/depression'>
+                                <GiBrain size='10x' color='#f06292ff' />
+                                </a>
+                            </div>
                             </div>
                         </div>
 
