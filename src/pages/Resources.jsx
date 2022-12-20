@@ -6,8 +6,7 @@ import { IoIosMore } from 'react-icons/io';
 import { RiLeafLine } from 'react-icons/ri';
 import { DropDownListComponent } from '@syncfusion/ej2-react-dropdowns';
 
-import { Stacked, Pie, Button, LineChart, SparkLine } from '../components';
-import { Card } from '../components';
+import { Stacked, Pie, Button, LineChart, SparkLine, Card } from '../components';
 import { resourceData, medicalproBranding, recentTransactions, weeklyStats, dropdownData, SparklineAreaData, ecomPieChartData } from '../data/dummy';
 import { useStateContext } from '../contexts/ContextProvider';
 
