@@ -1,17 +1,16 @@
-import React from 'react';
-import { BiBlanket } from 'react-icons/bi';
-import { GoPrimitiveDot } from 'react-icons/go';
-import { GiBrain } from 'react-icons/gi';
-import { IoIosMore } from 'react-icons/io';
-import { RiLeafLine } from 'react-icons/ri';
-import { DropDownListComponent } from '@syncfusion/ej2-react-dropdowns';
-
-import { Stacked, Pie, Button, LineChart, SparkLine, Carousel } from '.';
-import { resourceData, medicalproBranding, recentTransactions, weeklyStats, dropdownData, SparklineAreaData, ecomPieChartData } from '../data/dummy';
+import React, { useEffect } from 'react';
+import { AiOutlineMenu } from 'react-icons/ai';
+import { FiShoppingCart } from 'react-icons/fi';
+import { BsChat, BsChatLeft } from 'react-icons/bs';
+import { RiNotification3Line } from 'react-icons/ri';
+import { MdKeyboardArrowDown } from 'react-icons/md';
+import { TooltipComponent } from '@syncfusion/ej2-react-popups';
+import avatar from '../data/avatar.jpg';
+import { Cart, Chat, Notification, UserProfile } from '.';
 import { useStateContext } from '../contexts/ContextProvider';
 
 
-const Cards = () => {
+const Card = () => {
     return (
         <div id="carouselExampleCaptions" class="carousel slide relative" data-bs-ride="carousel">
             <div class="carousel-indicators absolute right-0 bottom-0 left-0 flex justify-center p-0 mb-4">
@@ -93,4 +92,4 @@ const Cards = () => {
     )
 }
 
-export default Cards
+export default Card
