@@ -528,36 +528,6 @@ export const chatData = [
 
 export const resourceData = [
   {
-    icon: <GiBrain />,
-    amount: 'Resources',
-    percentage: '',
-    title: 'Depression',
-    iconColor: '#f8bbd0ff',
-    iconBg: '#f06292ff',
-    pcColor: 'red-600',
-    id: 'depressed',
-  },
-  {
-    icon: <GiChickenOven />,
-    amount: 'Resources',
-    percentage: '',
-    title: 'Eating Disorders',
-    iconColor: 'rgb(255, 244, 229)',
-    iconBg: '#ff9500',
-    pcColor: 'green-600',
-    id: 'eating'
-  },
-  {
-    icon: <BiBlanket />,
-    amount: 'Resources',
-    percentage: '',
-    title: 'Anxiety',
-    iconColor: 'rgb(228, 106, 118)',
-    iconBg: 'rgb(255, 244, 229)',
-    pcColor: 'green-600',
-    id: 'blanket'
-  },
-  {
     icon: <CiCircleAlert />,
     amount: 'Resources',
     percentage: 'Dial 988',
