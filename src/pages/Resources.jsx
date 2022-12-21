@@ -90,10 +90,10 @@ const Resources = () => {
                     </div>
                 </div>
             </div> */}
-            <div className='flex gap-10 flex-wrap justify-center'>
-                <div className='bg-white dark:text-gray-200 dark:bg-secondary-dark-bg m-3 p-4 rounded-2xl md:w-77'>
+            {/* <div className='flex gap-10 flex-wrap justify-center'>
+                <div className='bg-white dark:text-gray-200 dark:bg-secondary-dark-bg m-3 p-4 rounded-2xl md:w-77'> */}
 
-                    <div className='mt-10 flex gap-10 flex-wrap justify-center'>
+                    {/* <div className='mt-10 flex gap-10 flex-wrap justify-center hidden duration-700 ease-in-out' data-carousel-item>
                         <div className=' border-color m-4 pr-10'>
                             <div>
                                 <p className='mt-1 text-3xl font-semibold'>Depression</p>
@@ -112,30 +112,16 @@ const Resources = () => {
                         </div>
 
                         <div>
-                            {/* <Stacked width='320px' height='360px' /> */}
-                            <div>
-                                {/* <p>
-                                <span className='font-semibold'>Symptoms in adults:</span> <br />
-                                A person having a major depressive episode <br /> usually exhibits a low mood, which pervades all aspects of life, <br /> and an inability to experience pleasure in previously enjoyable activities.<br /> Depressed people may be preoccupied with—or ruminate over—thoughts <br /> and feelings of worthlessness, inappropriate guilt or regret, helplessness <br /> or hopelessness. In severe cases, depressed people may have symptoms <br /> of psychosis. These symptoms include delusions or, less commonly, hallucinations, <br /> usually unpleasant.
-                                </p>
-                                <Button
-                                color='white'
-                                bgColor={currentColor}
-                                text='Next'
-                                borderRadius='10px'
-                                size='sm'
-                            /> */}
                                 <div>
                                     <a href='https://www.counseling.org/knowledge-center/mental-health-resources/depression'>
                                         <GiBrain size='10x' color='#f06292ff' />
                                     </a>
                                 </div>
-                            </div>
                         </div>
 
-                    </div>
-                </div>
-            </div>
+                    </div> */}
+                {/* </div>
+            </div> */}
         </div>
     )
 }
