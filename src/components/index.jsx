@@ -13,7 +13,9 @@ import Stacked from './Charts/Stacked';
 import Pie from './Charts/Pie';
 import ChartsHeader from './ChartsHeader';
 import Header from './Header';
-import Card from './Card';
+import DepressionCard from './DepresssionCard';
+import FoodCard from './FoodCard';
+import AnxietyCard from './AnxietyCard';
 
 export {
   Button,
@@ -31,5 +33,7 @@ export {
   Pie,
   ChartsHeader,
   Header,
-  Card
+  DepressionCard,
+  FoodCard,
+  AnxietyCard
 }
