@@ -16,6 +16,8 @@ import Header from './Header';
 import DepressionCard from './DepresssionCard';
 import FoodCard from './FoodCard';
 import AnxietyCard from './AnxietyCard';
+import StrengthCard from './StrengthCard';
+import SimpleSlider from './SimpleSlider';
 
 export {
   Button,
@@ -35,5 +37,7 @@ export {
   Header,
   DepressionCard,
   FoodCard,
-  AnxietyCard
+  AnxietyCard, 
+  StrengthCard,
+  SimpleSlider
 }

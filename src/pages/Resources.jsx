@@ -6,8 +6,8 @@ import { IoIosMore } from 'react-icons/io';
 import { RiLeafLine } from 'react-icons/ri';
 import { DropDownListComponent } from '@syncfusion/ej2-react-dropdowns';
 
-import { Stacked, Pie, Button, LineChart, SparkLine, DepressionCard, FoodCard, AnxietyCard } from '../components';
-import { resourceData, medicalproBranding, recentTransactions, weeklyStats, dropdownData, SparklineAreaData, ecomPieChartData } from '../data/dummy';
+import { Stacked, Pie, Button, LineChart, SparkLine, DepressionCard, FoodCard, AnxietyCard, SimpleSlider } from '../components';
+import { resourceData } from '../data/dummy';
 import { useStateContext } from '../contexts/ContextProvider';
 
 const Resources = () => {
@@ -58,9 +58,11 @@ const Resources = () => {
                 </div>
             </div>
 
-            <DepressionCard />
+            <SimpleSlider />
+
+            {/* <DepressionCard />
             <FoodCard />
-            <AnxietyCard />
+            <AnxietyCard /> */}
 
         </div>
     )
