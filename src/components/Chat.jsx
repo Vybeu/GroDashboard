@@ -1,11 +1,12 @@
 import React from 'react';
 import { FaUserCircle } from 'react-icons/fa';
-import { FiSettings } from 'react-icons/fi';
 import { HiLocationMarker } from 'react-icons/hi';
-import { AiOutlineLink } from 'react-icons/ai';
+import { AiOutlineLink, AiOutlineClose } from 'react-icons/ai';
 import { TbLeaf } from 'react-icons/tb';
+import { useStateContext } from '../contexts/ContextProvider';
 
 const Chat = () => {
+    const { activeMenu, setActiveMenu, isClicked, setIsClicked, handleClick, screenSize, setscreenSize, currentColor, closeClick } = useStateContext();
     return (
         <div>
             <div className='flex flex-col justify-center antialiased dark:bg-secondary-dark-bg dark:text-gray-200 bg-gray-50 text-gray-600 min-h-screen p-4'>
@@ -25,10 +26,10 @@ const Chat = () => {
                                     </div>
                                 </div>
                                 <div className='relative inline-flex flex-shrink-0'>
-                                    <button className='text-gray-400 hover:text-gray-500 rounded-full focus:ring-0 outline-none focus:outline-none'>
-                                        <span className='sr-only'>Settings</span>
+                                    <button className='text-gray-400 hover:text-gray-500 rounded-full focus:ring-0 outline-none focus:outline-none' onClick={() => closeClick()}>
+                                        <span className='sr-only'>Close</span>
                                         <div className='w-4 h-4 pl-2 pr-5'>
-                                            <FiSettings size='24px' />
+                                            <AiOutlineClose color='red' size='24px' />
                                         </div>
                                     </button>
                                 </div>
@@ -40,7 +41,7 @@ const Chat = () => {
                                 </div>
                                 <div className='flex items-center'>
                                     <AiOutlineLink size='20px' />
-                                    <a className='text-sm font-medium whitespace-nowrap text-indigo-500 hover:text-indigo-800 ml-2'>adam.soros@gro.net</a>
+                                    <a className='text-sm font-medium whitespace-nowrap text-indigo-500 hover:text-indigo-800 hover:cursor-pointer ml-2'>adam.soros@gro.net</a>
                                 </div>
                             </div>
                         </header>
