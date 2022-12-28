@@ -1,9 +1,13 @@
 import React from 'react';
 import { AiOutlineCalendar, AiOutlineShoppingCart, AiOutlineAreaChart, AiOutlineBarChart, AiOutlineStock } from 'react-icons/ai';
 import { FiEdit, FiPieChart, FiBarChart, FiCreditCard, FiStar, FiShoppingCart } from 'react-icons/fi';
+import { WiMoonAltFirstQuarter } from 'react-icons/wi';
+import { RxBorderSolid } from 'react-icons/rx';
+import { FaEye } from 'react-icons/fa';
+import { MdPeopleAlt } from 'react-icons/md';
 import { CiCircleAlert } from 'react-icons/ci';
 import { IoIosSchool } from 'react-icons/io';
-import { GiTreeGrowth, GiBookshelf, GiBrain, GiChickenOven, GiBiceps } from 'react-icons/gi';
+import { GiTreeGrowth, GiBookshelf, GiBrain, GiChickenOven, GiBiceps, GiGrab } from 'react-icons/gi';
 import { BsKanban, BsBarChart, BsPencil, BsCurrencyDollar, BsShield, BsChatLeft, BsFillCalendarCheckFill, BsEmojiSunglasses } from 'react-icons/bs';
 import { BiColorFill, BiBlanket } from 'react-icons/bi';
 import { IoMdContacts } from 'react-icons/io';
@@ -617,6 +621,61 @@ export const resourceSmall = [
     pcColor: 'red-600',
     id: 'acrisis',
     link: 'https://www.healthline.com/nutrition/common-eating-disorders'
+  },
+  {
+    icon: <FaEye />,
+    amount: 'Resources',
+    percentage: '',
+    title: 'Paranoia',
+    iconColor: 'purple',
+    iconBg: '#979ccb',
+    pcColor: 'gray-600',
+    id: 'acrisis',
+    link: ''
+  },
+  {
+    icon: <MdPeopleAlt />,
+    amount: 'Resources',
+    percentage: '',
+    title: 'Bi-Polar Disorder',
+    iconColor: 'blue',
+    iconBg: '#b37ba7',
+    pcColor: 'gray-600',
+    id: 'acrisis',
+    link: ''
+  },
+  {
+    icon: <GiGrab />,
+    amount: 'Resources',
+    percentage: '',
+    title: 'Obsessive-Compulsive',
+    iconColor: '#90af6f',
+    iconBg: '#304c13',
+    pcColor: 'gray-600',
+    id: 'acrisis',
+    link: ''
+  },
+  {
+    icon: <WiMoonAltFirstQuarter />,
+    amount: 'Resources',
+    percentage: '',
+    title: 'Post-Traumatic Stress',
+    iconColor: '#fff',
+    iconBg: '#000',
+    pcColor: 'gray-600',
+    id: 'acrisis',
+    link: ''
+  },
+  {
+    icon: <RxBorderSolid />,
+    amount: 'Resources',
+    percentage: '',
+    title: 'Borderline Personality',
+    iconColor: '#b37ba7',
+    iconBg: '#0b666f',
+    pcColor: 'gray-600',
+    id: 'acrisis',
+    link: ''
   },
 ];
 
