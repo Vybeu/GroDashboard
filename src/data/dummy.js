@@ -1,16 +1,16 @@
 import React from 'react';
 import { AiOutlineCalendar, AiOutlineShoppingCart, AiOutlineAreaChart, AiOutlineBarChart, AiOutlineStock } from 'react-icons/ai';
 import { FiEdit, FiPieChart, FiBarChart, FiCreditCard, FiStar, FiShoppingCart } from 'react-icons/fi';
-import {CiCircleAlert} from 'react-icons/ci';
-import {IoIosSchool } from 'react-icons/io';
-import {GiTreeGrowth, GiBookshelf, GiBrain, GiChickenOven, GiBiceps} from 'react-icons/gi';
+import { CiCircleAlert } from 'react-icons/ci';
+import { IoIosSchool } from 'react-icons/io';
+import { GiTreeGrowth, GiBookshelf, GiBrain, GiChickenOven, GiBiceps } from 'react-icons/gi';
 import { BsKanban, BsBarChart, BsPencil, BsCurrencyDollar, BsShield, BsChatLeft, BsFillCalendarCheckFill, BsEmojiSunglasses } from 'react-icons/bs';
 import { BiColorFill, BiBlanket } from 'react-icons/bi';
 import { IoMdContacts } from 'react-icons/io';
 import { RiContactsLine, RiStockLine, RiPagesLine } from 'react-icons/ri';
 import { MdOutlineSupervisorAccount } from 'react-icons/md';
-import {RiLeafLine} from 'react-icons/ri';
-import {  } from 'react-icons/hi';
+import { RiLeafLine } from 'react-icons/ri';
+import { } from 'react-icons/hi';
 import { TiTick } from 'react-icons/ti';
 import { GiLouvrePyramid } from 'react-icons/gi';
 import { GrLocation } from 'react-icons/gr';
@@ -48,31 +48,43 @@ export const gridOrderStatus = (props) => (
 );
 
 export const kanbanGrid = [
-  { headerText: 'To Do',
+  {
+    headerText: 'To Do',
     keyField: 'Open',
-    allowToggle: true },
+    allowToggle: true
+  },
 
-  { headerText: 'In Progress',
+  {
+    headerText: 'In Progress',
     keyField: 'InProgress',
-    allowToggle: true },
+    allowToggle: true
+  },
 
-  { headerText: 'Testing',
+  {
+    headerText: 'Testing',
     keyField: 'Testing',
     allowToggle: true,
-    isExpanded: false },
+    isExpanded: false
+  },
 
-  { headerText: 'Done',
+  {
+    headerText: 'Done',
     keyField: 'Close',
-    allowToggle: true },
+    allowToggle: true
+  },
 ];
 
 export const goalGrid = [
-  { headerText: 'To Do',
+  {
+    headerText: 'To Do',
     keyField: 'Open',
-    allowToggle: true },
-  { headerText: 'Done',
+    allowToggle: true
+  },
+  {
+    headerText: 'Done',
     keyField: 'Close',
-    allowToggle: true },
+    allowToggle: true
+  },
 ];
 const gridEmployeeProfile = (props) => (
   <div className="flex items-center gap-2">
@@ -301,20 +313,26 @@ export const colorMappingData = [
 ];
 
 export const rangeColorMapping = [
-  { label: '1°C to 10°C',
+  {
+    label: '1°C to 10°C',
     start: '1',
     end: '10',
-    colors: colorMappingData[1] },
+    colors: colorMappingData[1]
+  },
 
-  { label: '11°C to 20°C',
+  {
+    label: '11°C to 20°C',
     start: '11',
     end: '20',
-    colors: colorMappingData[2] },
+    colors: colorMappingData[2]
+  },
 
-  { label: '21°C to 30°C',
+  {
+    label: '21°C to 30°C',
     start: '21',
     end: '30',
-    colors: colorMappingData[3] },
+    colors: colorMappingData[3]
+  },
 
 ];
 
@@ -371,45 +389,59 @@ export const LinePrimaryYAxis = {
 
 export const customersGrid = [
   { type: 'checkbox', width: '50' },
-  { headerText: 'Name',
+  {
+    headerText: 'Name',
     width: '150',
     template: customerGridImage,
-    textAlign: 'Center' },
-  { field: 'ProjectName',
+    textAlign: 'Center'
+  },
+  {
+    field: 'ProjectName',
     headerText: 'Title',
     width: '150',
-    textAlign: 'Center' },
-  { field: 'Status',
+    textAlign: 'Center'
+  },
+  {
+    field: 'Status',
     headerText: 'Status',
     width: '130',
     format: 'yMd',
     textAlign: 'Center',
-    template: customerGridStatus },
-  { field: 'Location',
+    template: customerGridStatus
+  },
+  {
+    field: 'Location',
     headerText: 'Location',
     width: '150',
-    textAlign: 'Center' },
+    textAlign: 'Center'
+  },
 ];
 
 export const employeesGrid = [
-  { headerText: 'Professor',
+  {
+    headerText: 'Professor',
     width: '150',
     template: gridEmployeeProfile,
-    textAlign: 'Center' },
-  { field: 'Name',
+    textAlign: 'Center'
+  },
+  {
+    field: 'Name',
     headerText: '',
     width: '0',
     textAlign: 'Center',
   },
-  { field: 'Title',
+  {
+    field: 'Title',
     headerText: 'Department',
     width: '170',
     textAlign: 'Center',
   },
-  { headerText: 'Building',
+  {
+    headerText: 'Building',
     width: '120',
     textAlign: 'Center',
-    template: gridEmployeeCountry },
+    template: gridEmployeeCountry
+  },
 ];
 
 export const links = [
@@ -545,11 +577,47 @@ export const resourceData = [
     amount: 'Resources',
     percentage: 'Dial 988',
     title: 'Crisis',
-    iconColor: '#ff0015', 
+    iconColor: '#ff0015',
     iconBg: '#ef9a9aff',
     pcColor: 'red-600',
     id: 'acrisis'
-  }, 
+  },
+];
+
+export const resourceSmall = [
+  {
+    icon: <GiBrain />,
+    amount: 'Resources',
+    percentage: '',
+    title: 'Depression',
+    iconColor: '#f06292ff',
+    iconBg: 'rgb(249 168 212 / var(--tw-bg-opacity))',
+    pcColor: 'pink-600',
+    id: 'acrisis',
+    link: 'https://www.counseling.org/knowledge-center/mental-health-resources/depression'
+  },
+  {
+    icon: <BiBlanket />,
+    amount: 'Resources',
+    percentage: '',
+    title: 'Anxiety',
+    iconColor: 'darkGreen',
+    iconBg: '#E9C150',
+    pcColor: 'red-600',
+    id: 'acrisis',
+    link: 'https://www.anxiety.org/what-is-anxiety'
+  },
+  {
+    icon: <GiChickenOven />,
+    amount: 'Resources',
+    percentage: '',
+    title: 'Eating Disorders',
+    iconColor: 'brown',
+    iconBg: 'rgb(253 186 116 / var(--tw-bg-opacity))',
+    pcColor: 'red-600',
+    id: 'acrisis',
+    link: 'https://www.healthline.com/nutrition/common-eating-disorders'
+  },
 ];
 
 export const secondaryResources = [
@@ -558,7 +626,7 @@ export const secondaryResources = [
     amount: 'Crisis',
     percentage: 'Dial 988',
     title: 'Resources',
-    iconColor: '#ff0015', 
+    iconColor: '#ff0015',
     iconBg: '#ef9a9aff',
     pcColor: 'red-600',
   },
@@ -835,7 +903,8 @@ export const ordersGrid = [
     editType: 'dropdownedit',
     textAlign: 'Center',
   },
-  { field: 'CustomerName',
+  {
+    field: 'CustomerName',
     headerText: 'Professor Name',
     width: '150',
     textAlign: 'Center',
@@ -1416,7 +1485,7 @@ export const teachersData = [
     Title: 'History Teacher',
     Country: 'Building E',
     EmployeeImage:
-    avatar3,
+      avatar3,
   },
   {
     Name: 'Nasimiyu Danai',
@@ -1738,29 +1807,35 @@ export const SparklineAreaData = [
 ];
 
 export const lineCustomSeries = [
-  { dataSource: lineChartData[0],
+  {
+    dataSource: lineChartData[0],
     xName: 'x',
     yName: 'y',
     name: 'Germany',
     width: '2',
     marker: { visible: true, width: 10, height: 10 },
-    type: 'Line' },
+    type: 'Line'
+  },
 
-  { dataSource: lineChartData[1],
+  {
+    dataSource: lineChartData[1],
     xName: 'x',
     yName: 'y',
     name: 'England',
     width: '2',
     marker: { visible: true, width: 10, height: 10 },
-    type: 'Line' },
+    type: 'Line'
+  },
 
-  { dataSource: lineChartData[2],
+  {
+    dataSource: lineChartData[2],
     xName: 'x',
     yName: 'y',
     name: 'India',
     width: '2',
     marker: { visible: true, width: 10, height: 10 },
-    type: 'Line' },
+    type: 'Line'
+  },
 
 ];
 
@@ -1823,7 +1898,8 @@ export const stackedChartData = [
 
 export const stackedCustomSeries = [
 
-  { dataSource: stackedChartData[0],
+  {
+    dataSource: stackedChartData[0],
     xName: 'x',
     yName: 'y',
     name: 'Completed Goals',
@@ -1832,7 +1908,8 @@ export const stackedCustomSeries = [
 
   },
 
-  { dataSource: stackedChartData[1],
+  {
+    dataSource: stackedChartData[1],
     xName: 'x',
     yName: 'y',
     name: 'Misc Work',
