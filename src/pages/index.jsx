@@ -16,3 +16,4 @@ export { default as Pyramid } from './Charts/Pyramid';
 export { default as Stacked } from './Charts/Stacked';
 export { default as Resources } from './Resources';
 export { default as Goals } from './Goals';
+export { default as SignIn } from './SignIn';
