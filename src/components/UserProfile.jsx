@@ -1,11 +1,26 @@
-import React from 'react'
+import React from "react";
+import { UserAuth } from "../contexts/AuthContextProvider";
 
 const UserProfile = () => {
-    return (
-        <div>
-            UserProfile
-        </div>
-    )
-}
+  const { user, logOut } = UserAuth();
 
-export default UserProfile
+  const handleSignOut = async () => {
+    try {
+      await logOut();
+      alert("You have logged out");
+    } catch (error) {
+      console.log(error);
+    }
+  };
+
+  return (
+    <div>
+      UserProfile
+      <div>
+        <button onClick={handleSignOut}>Logout</button>
+      </div>
+    </div>
+  );
+};
+
+export default UserProfile;
