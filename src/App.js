@@ -4,7 +4,8 @@ import { FiSettings } from 'react-icons/fi';
 import { TooltipComponent } from '@syncfusion/ej2-react-popups';
 
 import { Navbar, Footer, Sidebar, ThemeSettings, Card } from './components';
-import { Growth, Classes, Calendar, Teachers, Resources, Pyramid, Counselors, Kanban, Line, Area, Bar, Pie, Financial, ColorPicker, ColorMapping, Journal, Goals, SignIn } from './pages'
+import { Growth, Classes, Calendar, Teachers, Resources, Pyramid, Counselors, Kanban, Line, Area, Bar, Pie, Financial, ColorPicker, ColorMapping, Journal, Goals, SignIn } from './pages';
+import Protected from './components/Protected';
 
 import { useStateContext } from './contexts/ContextProvider';
 
@@ -47,24 +48,24 @@ const App = () => {
                                 <Routes>
                                     {/* Dashboard */}
                                     <Route path='/' element={<SignIn />} />
-                                    <Route path='/growth' element={<Growth />} />
+                                    <Route path='/growth' element={<Protected> <Growth /> </Protected>} />
 
                                     {/* Pages */}
-                                    <Route path='/classes' element={<Classes />} />
-                                    <Route path='/teachers' element={<Teachers />} />
-                                    <Route path='/counselors' element={<Counselors />} />
-                                    <Route path='/resources' element={<Resources />} />
+                                    <Route path='/classes' element={<Protected><Classes /></Protected>} />
+                                    <Route path='/teachers' element={<Protected> <Teachers /> </Protected>} />
+                                    <Route path='/counselors' element={<Protected> <Counselors /> </Protected>} />
+                                    <Route path='/resources' element={<Protected> <Resources /> </Protected>} />
 
                                     {/* Apps */}
-                                    <Route path='/kanban' element={<Kanban />} />
-                                    <Route path='/journal' element={<Journal />} />
-                                    <Route path='/goals' element={<Goals />} />
-                                    <Route path='/calendar' element={<Calendar />} />
-                                    <Route path='/color-picker' element={<ColorPicker />} />
+                                    <Route path='/kanban' element={<Protected> <Kanban /> </Protected>} />
+                                    <Route path='/journal' element={<Protected> <Journal /> </Protected>} />
+                                    <Route path='/goals' element={<Protected> <Goals /> </Protected>} />
+                                    <Route path='/calendar' element={<Protected> <Calendar /> </Protected>} />
+                                    <Route path='/color-picker' element={<Protected> <ColorPicker /> </Protected>} />
 
                                     {/* Charts */}
-                                    <Route path='/area' element={<Area />} />
-                                    <Route path='/pyramid' element={<Pyramid />} />
+                                    <Route path='/area' element={<Protected> <Area /> </Protected>} />
+                                    <Route path='/pyramid' element={<Protected> <Pyramid /> </Protected>} />
                                 </Routes>
                             </div>
                         </div>
