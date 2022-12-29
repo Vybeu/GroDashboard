@@ -10,6 +10,7 @@ import { Button, Cart, Chat, Notification, UserProfile } from '.';
 import { useStateContext } from '../contexts/ContextProvider';
 import { UserAuth } from '../contexts/AuthContextProvider';
 import { Link } from 'react-router-dom';
+import Protected from './Protected';
 
 const NavButton = ({ title, customFunc, icon, color, dotColor }) => (
     <TooltipComponent content={title} position="BottomCenter">
@@ -21,7 +22,7 @@ const NavButton = ({ title, customFunc, icon, color, dotColor }) => (
 )
 
 const Navbar = () => {
-    const {user} = UserAuth();
+    const { user } = UserAuth();
 
     const { activeMenu, setActiveMenu, isClicked, setIsClicked, handleClick, screenSize, setscreenSize, currentColor } = useStateContext();
 
@@ -57,16 +58,16 @@ const Navbar = () => {
                         <img className='rounded-full w-8 h-8' src={avatar} />
                         <p>
                             <span className='text-gray-400 text-14'>Hi, </span> {' '}
-                            <span className='text-gray-400 font-bold ml-1 text-14'>{user?.displayName}</span> 
-                            
+                            <span className='text-gray-400 font-bold ml-1 text-14'>{user?.displayName}</span>
+
                         </p>
                         <MdKeyboardArrowDown className='text-gray-400 text-14' />
                     </div>
                 </TooltipComponent>
-                
-                {isClicked.chat && (<Chat />)}
-                {isClicked.notification && (<Notification />)}
-                {isClicked.userProfile && (<UserProfile />)}
+
+                {isClicked.chat && (<Protected><Chat /></Protected>)}
+                {isClicked.notification && (<Protected><Notification /></Protected>)}
+                {isClicked.userProfile && (<Protected><UserProfile /></Protected>)}
             </div>
         </div>
     )
