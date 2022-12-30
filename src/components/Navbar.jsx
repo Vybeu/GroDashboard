@@ -5,6 +5,7 @@ import { BsChat, BsChatLeft } from 'react-icons/bs';
 import { RiNotification3Line } from 'react-icons/ri';
 import { MdKeyboardArrowDown } from 'react-icons/md';
 import { TooltipComponent } from '@syncfusion/ej2-react-popups';
+import { IoPerson } from 'react-icons/io';
 import avatar from '../data/avatar.jpg';
 import { Button, Cart, Chat, Notification, UserProfile } from '.';
 import { useStateContext } from '../contexts/ContextProvider';

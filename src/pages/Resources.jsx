@@ -6,7 +6,7 @@ import { IoIosMore } from 'react-icons/io';
 import { RiLeafLine } from 'react-icons/ri';
 import { DropDownListComponent } from '@syncfusion/ej2-react-dropdowns';
 
-import { Stacked, Pie, Button, LineChart, SparkLine, DepressionCard, FoodCard, AnxietyCard, SimpleSlider } from '../components';
+import { Button } from '../components';
 import { resourceData, resourceSmall } from '../data/dummy';
 import { useStateContext } from '../contexts/ContextProvider';
 
@@ -78,11 +78,6 @@ const Resources = () => {
                         </p>
                     </div>
                 ))}
-            </div>
-
-
-            <div className='md:hidden sm:hidden lg:visible'>
-                <SimpleSlider />
             </div>
 
             {/* <DepressionCard />
