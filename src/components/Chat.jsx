@@ -4,8 +4,10 @@ import { HiLocationMarker } from 'react-icons/hi';
 import { AiOutlineLink, AiOutlineClose } from 'react-icons/ai';
 import { TbLeaf } from 'react-icons/tb';
 import { useStateContext } from '../contexts/ContextProvider';
+import { UserAuth } from '../contexts/AuthContextProvider';
 
 const Chat = () => {
+    const { user } = UserAuth();
     const { activeMenu, setActiveMenu, isClicked, setIsClicked, handleClick, screenSize, setscreenSize, currentColor, closeClick } = useStateContext();
     return (
         <div>
@@ -20,9 +22,8 @@ const Chat = () => {
                                     </a> 
                                     <div className='pr-1'>
                                         <a className='inline-flex text-gray-800 hover:text-gray-900' href='#'>
-                                            <h2 className='text-xl leading-snug font-bold'>Adam Soros</h2>
+                                            <h2 className='text-xl leading-snug font-bold'>{user.displayName}</h2>
                                         </a>
-                                        <a className='block text-sm font-medium hover:text-indigo-500' href='#'>@adam.soros</a>
                                     </div>
                                 </div>
                                 <div className='relative inline-flex flex-shrink-0'>
@@ -41,7 +42,7 @@ const Chat = () => {
                                 </div>
                                 <div className='flex items-center'>
                                     <AiOutlineLink size='20px' />
-                                    <a className='text-sm font-medium whitespace-nowrap text-indigo-500 hover:text-indigo-800 hover:cursor-pointer ml-2'>adam.soros@gro.net</a>
+                                    <a className='text-sm font-medium whitespace-nowrap text-indigo-500 hover:text-indigo-800 hover:cursor-pointer ml-2'>{user.email}</a>
                                 </div>
                             </div>
                         </header>

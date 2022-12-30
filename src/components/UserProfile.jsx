@@ -7,7 +7,6 @@ const UserProfile = () => {
   const handleSignOut = async () => {
     try {
       await logOut();
-      alert("You have logged out");
     } catch (error) {
       console.log(error);
     }
